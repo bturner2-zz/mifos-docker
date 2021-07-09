@@ -31,6 +31,8 @@ services:
       retries: 20  
     networks:
       - mifos-network
+    volumes:
+      - /home/centos/volume:/var/lib/mysql
   #phpmyadmin service
   mifos_phpmyadmin:
     links:
